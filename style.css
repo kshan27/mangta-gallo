@@ -1,0 +1,148 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+  } 
+
+header {
+    background-color: #fcf2f3;
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+
+}
+
+/*.parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto / auto 1fr auto;
+}*/
+
+footer {
+    background-color: #0a0b6e;
+    color:rgb(162, 164, 178);
+    padding: 2rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header .img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0a0b6e;
+  }
+  
+ nav li {
+    float: left;
+  }
+  
+nav li a {
+    display: block;
+    color: #f5ecec;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+nav li a:hover {
+    color: #d7ee0a; 
+}
+
+main {
+    display: grid;
+    width: 100%;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    
+}
+.sec1 {
+    background-image: url(static/images/diamond-frame.jpg);
+    color:rgb(7, 68, 91);
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: left;
+}
+.sec1 img {
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,.2);
+    height: 225px;  
+    margin-left: 0.5em;
+    margin-top: 1em;
+    width: 90%;
+}
+.sec1>.card {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+button {
+    background-color: #f66f36;
+    border: none;
+    border-radius: 2em;
+    box-shadow: 3px 3px 15px rgba(0,0,0,.2);
+    color: #000;
+    font-size: 14px;
+    font-weight: 800;
+    height: 3em;
+    margin: 1em;
+    width: 12em;
+    
+}
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.sec0 {
+    background-image: url(static/images/blue.jpg);
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: left;
+}
+.sec0 img {
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,.2);
+    height: 225px;  
+    margin-left: 0.5em;
+    margin-top: 1em;
+    width: 90%;
+}
+.sec0>.card {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.intro {
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    font-weight: 800;
+    margin-right: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #180954;
+}
+img ~ p {
+    justify-content: center;
+    margin-left: 0.5em ;
+}
